@@ -32,7 +32,7 @@ development:
   username: postgres
   password: 123MUKRSTIKk!
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: test
@@ -47,3 +47,5 @@ production:
   pool: 5
   username: postgres
   password: 123MUKRSTIKk!
+cucumber:
+  <<: *test
